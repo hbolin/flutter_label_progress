@@ -1,14 +1,14 @@
 # flutter_label_progress
 
-A new Flutter package.
+显示标签进度的库，可以实现以下功能：
 
-## Getting Started
+1.可设置水平或者竖直方向
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+2.可设置是否可以滚动
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+3.可自定义节点和内容的样式
+
+
+如下图所示：
+
+![Image text](https://raw.githubusercontent.com/hbolin/flutter_label_progress/master/image/demo.jpg)
