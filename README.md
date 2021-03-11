@@ -11,4 +11,4 @@
 
 如下图所示：
 
-![Image text](https://raw.githubusercontent.com/hbolin/flutter_label_progress/master/image/demo.jpg)
+<image src="https://raw.githubusercontent.com/hbolin/flutter_label_progress/master/image/demo.jpg" width="375">
