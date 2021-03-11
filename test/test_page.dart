@@ -17,6 +17,7 @@ class _TestPageState extends State<TestPage> {
       body: Column(
         children: [
           // 水平的标签指示器
+          Text('水平的标签指示器'),
           LabelProgress.text(
             selectedStart: 1,
             selectedEnd: 2,
@@ -29,14 +30,16 @@ class _TestPageState extends State<TestPage> {
             nodeTextStyle: TextStyle(color: Colors.yellow),
             unSelectedTextStyle: TextStyle(color: Colors.black),
             selectedTextStyle: TextStyle(color: Colors.red),
-            nodeLabelSpacing: 30,
+            nodeLabelSpacing: 10,
             labels: [
-              '企业信息',
-              '法人信息',
-              '法人人脸识别',
+              '标签1',
+              '标签2',
+              '标签3',
             ],
           ),
+          Padding(padding: const EdgeInsets.only(top: 20)),
           // 水平的标签指示器:可以滚动
+          Text('水平的标签指示器:可以滚动'),
           LabelProgress.text(
             selectedStart: 1,
             selectedEnd: 2,
@@ -53,21 +56,21 @@ class _TestPageState extends State<TestPage> {
             isScrollable: true,
             // labelsSparing: 30,
             labels: [
-              '企业信息',
-              '法人信息',
-              '法人人脸识别',
-              '企业信息',
-              '法人信息',
-              '法人人脸识别',
-              '企业信息',
-              '法人信息',
-              '法人人脸识别',
-              '企业信息',
-              '法人信息',
-              '法人人脸识别',
+              '标签1',
+              '标签2',
+              '标签3',
+              '标签4',
+              '标签5',
+              '标签6',
+              '标签7',
+              '标签8',
+              '标签9',
+              '标签10',
             ],
           ),
-          // 自定义指示器和标签
+          Padding(padding: const EdgeInsets.only(top: 20)),
+          // 自定义节点和标签
+          Text('自定义节点和标签'),
           LabelProgress(
             selectedStart: 1,
             selectedEnd: 2,
@@ -83,13 +86,15 @@ class _TestPageState extends State<TestPage> {
             nodeBuilder: (BuildContext context, int index, bool selected) {
               return selected
                   ? Icon(
-                Icons.check,
-                color: Colors.blue,
-              )
+                      Icons.check_circle,
+                      color: Colors.blue,
+                    )
                   : Icon(Icons.error, color: Colors.grey);
             },
           ),
+          Padding(padding: const EdgeInsets.only(top: 20)),
           // 竖直的标签指示器
+          Text('竖直的标签指示器'),
           Expanded(
             child: LabelProgress.text(
               selectedStart: 1,
@@ -97,22 +102,19 @@ class _TestPageState extends State<TestPage> {
               direction: Axis.vertical,
               isScrollable: true,
               labels: [
-                '企业信息',
-                '法人信息',
-                '法人人脸识别',
-                '企业信息',
-                '法人信息',
-                '法人人脸识别',
-                '企业信息',
-                '法人信息',
-                '法人人脸识别',
-                '企业信息',
-                '法人信息',
-                '法人人脸识别',
+                '标签1',
+                '标签2',
+                '标签3',
+                '标签4',
+                '标签5',
+                '标签6',
+                '标签7',
               ],
             ),
           ),
-          // 自定义指示器和标签
+          Padding(padding: const EdgeInsets.only(top: 20)),
+          // 自定义节点和标签
+          Text('自定义节点和标签：竖直方向'),
           Expanded(
             child: LabelProgress(
               selectedStart: 1,
@@ -133,9 +135,9 @@ class _TestPageState extends State<TestPage> {
               nodeBuilder: (BuildContext context, int index, bool selected) {
                 return selected
                     ? Icon(
-                  Icons.check,
-                  color: Colors.blue,
-                )
+                        Icons.check_circle,
+                        color: Colors.blue,
+                      )
                     : Icon(Icons.error, color: Colors.grey);
               },
             ),
