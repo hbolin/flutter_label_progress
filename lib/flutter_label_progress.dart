@@ -1,7 +1,3 @@
 library flutter_label_progress;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'package:flutter_label_progress/flutter_label_progress.dart';
