@@ -1,8 +1,8 @@
 name: flutter_label_progress
 description: A new Flutter package.
 version: 0.0.1
-author:
-homepage:
+#author: hbolin
+homepage: https://github.com/hbolin/flutter_label_progress
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
