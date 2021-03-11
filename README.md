@@ -11,4 +11,4 @@
 
 如下图所示：
 
-<image src="https://raw.githubusercontent.com/hbolin/flutter_label_progress/master/image/demo.jpg" width="375">
+<image src="https://raw.githubusercontent.com/hbolin/flutter_label_progress/master/image/demo1.jpg" width="375">
